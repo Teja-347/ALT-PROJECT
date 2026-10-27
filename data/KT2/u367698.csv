@@ -1,0 +1,3 @@
+timestamp,action_type,item_id,source,user_answer,platform
+1547350052115,enter,b431,diagnosis,,mobile
+1547350057516,submit,b431,diagnosis,,mobile

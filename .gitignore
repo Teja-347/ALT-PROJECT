@@ -1,0 +1,33 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local data and generated artifacts
+data/raw/
+data/processed/
+models/*.joblib
+models/*.pkl
+models/*.json
+reports/*.csv
+reports/*.json
+reports/*.png
+reports/*.html
+*.zip
+*.tar.gz
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/secrets.toml

@@ -1,0 +1,97 @@
+{
+  "data_mode": "synthetic",
+  "n_rows": 360,
+  "n_train": 300,
+  "n_test": 60,
+  "classes": [
+    "enter",
+    "respond",
+    "submit"
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "feature_names": [
+    "prior_actions",
+    "prior_enters",
+    "prior_responds",
+    "prior_submits",
+    "prior_unique_items",
+    "prior_answered",
+    "prior_mean_elapsed_ms",
+    "current_item_is_question",
+    "current_item_is_bundle",
+    "source",
+    "platform"
+  ],
+  "seed": 42,
+  "evaluation": {
+    "test_rows": 60,
+    "classes": [
+      "enter",
+      "respond",
+      "submit"
+    ],
+    "per_class": {
+      "logistic_regression": {
+        "enter": {
+          "precision": 0.6153846153846154,
+          "recall": 0.8,
+          "f1-score": 0.6956521739130435
+        },
+        "respond": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0
+        },
+        "submit": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5,
+          "f1-score": 0.5882352941176471
+        }
+      },
+      "random_forest": {
+        "enter": {
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1-score": 0.6341463414634146
+        },
+        "respond": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0
+        },
+        "submit": {
+          "precision": 0.631578947368421,
+          "recall": 0.6,
+          "f1-score": 0.6153846153846154
+        }
+      },
+      "xgboost": {
+        "enter": {
+          "precision": 0.6363636363636364,
+          "recall": 0.7,
+          "f1-score": 0.6666666666666666
+        },
+        "respond": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0
+        },
+        "submit": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6,
+          "f1-score": 0.631578947368421
+        }
+      }
+    },
+    "models_evaluated": [
+      "xgboost",
+      "logistic_regression",
+      "random_forest",
+      "majority_baseline"
+    ]
+  }
+}

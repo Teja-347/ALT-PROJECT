@@ -1,0 +1,30 @@
+{
+  "data_mode": "synthetic",
+  "n_rows": 360,
+  "n_train": 300,
+  "n_test": 60,
+  "classes": [
+    "enter",
+    "respond",
+    "submit"
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "feature_names": [
+    "prior_actions",
+    "prior_enters",
+    "prior_responds",
+    "prior_submits",
+    "prior_unique_items",
+    "prior_answered",
+    "prior_mean_elapsed_ms",
+    "current_item_is_question",
+    "current_item_is_bundle",
+    "source",
+    "platform"
+  ],
+  "seed": 42
+}

@@ -1,0 +1,4 @@
+timestamp,action_type,item_id,source,user_answer,platform
+1567857927543,enter,b1705,tutor,,mobile
+1567857967769,respond,q2313,tutor,b,mobile
+1567857971313,submit,b1705,tutor,,mobile
